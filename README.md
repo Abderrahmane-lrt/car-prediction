@@ -25,7 +25,7 @@ car-prediction/
 │   ├── explore.py              Loads the raw dataset
 │   ├── cleaning.py             Imputation, dedupe, encoding
 │   ├── training.py             Compares the four models
-│   └── predict.py              One-off prediction from the saved model
+│   └── testing.py              One-off prediction from the saved model
 ├── requirements.txt
 └── README.md
 ```
