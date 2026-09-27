@@ -1,5 +1,5 @@
-from .cleaning import x,y
-from sklearn.model_selection import train_test_split
+
+from splitting import x_train,x_test,y_train,y_test
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
@@ -7,14 +7,8 @@ from sklearn.svm import SVR
 from xgboost import XGBRegressor
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import mean_absolute_error,mean_squared_error,r2_score
-import pandas as pd
 
-x_train, x_test, y_train, y_test= train_test_split(
-    x,
-    y,
-    test_size=0.2,
-    random_state=10
-)
+
 
 params_rf = {
     'n_estimators': [100, 200, 300],
